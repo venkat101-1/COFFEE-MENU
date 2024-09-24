@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFFEE MENU </title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        body{
+            background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+            height: 100vh;
+            width: 100vw;
+        }
+        .nav{
+            position: relative;
+            top: 10%;
+            padding:15px;
+            display: flex;
+            align-items: center;
+            margin: auto;
+            width: 400px;
+            height: 85%;
+            background-color: burlywood;
+            flex-direction: column;
+        }
+        .cp{
+            display: flex;
+            justify-content: space-between;
+            width: 400px;
+          
+        }
+        .item{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h1> CAMPER CAFE</h1>
+        <br>
+        <p><i>Est.2020</i></p>
+        <br>
+        <hr style="border: 2px solid red; width: 100%;" >
+        <br>
+        <h1>Coffee</h1>
+        
+        <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="">
+        <div class="cp">
+            <div class="item">
+                French Vanilla
+                <br>
+                Caramel Macchiato
+                <br>
+                Pumpkin Spice
+                <br>
+                Hazeinut
+                <br>
+                Mocha
+            </div>
+            <div class="item">
+                3.00
+                <br>
+                3.75
+                <br>
+                3.50
+                <br>
+                4.00
+                <br>
+                5.00
+            </div>   
+            
+        </div>
+        <br>
+        <h1>Desserts</h1>
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCABSAIsDASIAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAAEDBAUGAv/EAC8QAAICAgAFAQcDBQEAAAAAAAABAgMEEQUSITFBUSIyQmFxgZETFCMGFSQzU6H/xAAYAQEBAQEBAAAAAAAAAAAAAAABAAIDBP/EABgRAQEBAQEAAAAAAAAAAAAAAAABERIC/9oADAMBAAIRAxEAPwDckEg8b0gIJ0WLUE7I8bK7Low956HBqxbJ6GLLOqiveMWXEZTeqYqSCRa2nT1IbXqap598V1qRW87JhqU6ko77jYtbkdynFuV0OZdUXbCQhI0AsQAQKSACxaAAkjel1KLcympdZk5U3XU9dzW4WPK9udnVbEMizidaj/G02/Bj149uVPmnJqJnzwqW10S+xeofp16gtjuDGBLh9cersZ4nbRjLlrSciy3Fttl1k0vkVSqrxXub5vqKeVO7Sn+kmtluRGV2JtQSPP76tx5emij9zbCXSO4Dg1dw2+FUOSctPZtFLcd66GrjCnJ9yWpeiFd9uNLltXs+rM0tr3W0NbKqr4Wx3F9C3WupHTt3JI7hGSkAEgAElWRDnqa7swsK6NO65dHs2OtLZqrtLM+xqM1bkcVxse3knNIQ4xiz7WI5rjy/y9/I1islHs2dZ42MX1jv45tM+0z23VZ3SZwMcm1dpv8AJbDiF8Pjf5LhdO2njVTXSKX0Mazh7b6SejmYcZvj5f5Mmvj9q7r/ANDmnY6OjDjW+ZMyJ0RsjprZz9f9SesYmTVx+uT9ppGL5p2Lbse3HfPXtr0LsTiMZ+xY9S9DzHi+LPo5J7MTJljv+SqXtfIsMreppL5Emv4XkSvq9vwZ6MNJABIABJHZ9exquI/x5KsS6dEbV62UZeNHIj0fU1LjNjnOMYlmTYrK47WkaeeDdDvE6iWPlQeoV831PDpyvix4nWe2L5crKqUe6PGjq3Q379MUU2Y1PxQS+xruM8uaBvpYWJL42n9CmfDa3/rk2PUGVpidteTYz4VYuyKZYFsfA7FlYynPw2XUW2O2K5m1s8vHsi/dPeNXKF8eZeUFwzXbcPqUcaOu5mGNhJPHi0zJ3s4enWAAMNAAFI3y9x80T9iH18aJD2/GiNfcnXTuOwJ5cIvvFHl0QfwJlpBasUPEqfwR/BXLArfnX0MvXzJHRjXS4XH/AKSKpcLXhtm2IHqjlpJ8KfhbKf7PN2J6aOhGi6GKcep01qLLgSZaAARAAKAASAACAASQSAICAAaSABZAABAASf/Z" alt="" height="50px" width="100px">
+        <div class="cp">
+            <div class="item">
+                Donut 
+                <br>
+                Cherry Pie
+                <br>
+                Cheesecake
+                <br>
+                Cinnamon Roll
+                <br>
+                Cheese Roll
+            </div>
+            <div class="item">
+                1.50
+                <br>
+                2.75
+                <br>
+                3.00
+                <br>
+                2.50
+                <br>
+                3.56
+            </div>   
+            
+        </div >
+        <br>
+        <hr style="border: 2px solid red; width: 100%;">
+        <br>
+        <a href="https://www.campcoff.com/">visit our website</a>
+        <br>
+        <p>123 Free Code Camp Drive</p>
+    </div>
+    
+</body>
+</html>
